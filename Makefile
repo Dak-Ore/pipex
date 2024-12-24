@@ -1,7 +1,7 @@
 NAME = pipex
 FLAGS = -Wall -Wextra -Werror -ggdb
 
-SOURCES = pipex.c
+SOURCES = pipex.c ft_split.c ft_strjoin.c pathfinder.c
 
 OBJS = $(SOURCES:.c=.o)
 
