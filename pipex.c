@@ -33,7 +33,6 @@ void	ft_exec(char *cmd, int fd1, int fd2, char **env)
 	path = search_path(env, splited_cmd[0], cmd);
 	execve(path, splited_cmd, env);
 	perror("Error ");
-	free(path);
 	killsplit(splited_cmd);
 	exit(EXIT_FAILURE);
 }
